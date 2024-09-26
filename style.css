@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   
+  background-repeat: no-repeat;
+    background-size: 100%;
+
+    background-image: url(./images/pngegg\(1\).png); 
+}
+
+#bmi-arrow{
+    transition: transform 0.5s ease;
+}
+
+.container{
+position: absolute;
+    left:34%;
+    top:5%;
+    /* transform: translate(-50%,50%); */
+
+}
+.box{
+
+    width: 500px;
+    height: 630px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,255);
+    text-align: center;
+}
+
+.box::before{
+
+    content:'';
+    position: absolute;
+    height: 110%;
+    width:110%;
+    left:-5%;
+    top:-5%;
+    bottom:-3%;
+    background-color: rgba(18, 19, 19, 0.3);
+    box-shadow: 0px 0px 166px -31px black rgba(0,0,0,0.15);
+    border-radius:60px;
+    z-index:-1
+}
+.content
+{
+    display: flex;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 25px;
+}
+
+.input{
+    background: #ffff;
+    box-shadow: 0px 0px 95px -30px black rgba(0,0,0,0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+   
+}
+.input label{
+    display:block;
+    font-size: 18px;
+    font-weight: 600;
+    color:#000;
+    margin-bottom: 20px;
+}
+.input input{
+    outline:none;
+    border:none;
+    border-bottom: 1px solid #4f7df9;
+    width:60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#calculate{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: #fff;
+ background-color:#4f7df9 ;
+ font-size: 16px;
+ border-radius: 12px;
+ padding: 12px 0;
+ width:90%;
+ outline:none;
+ border: none;
+transition:background .2s ease;
+}
+#calculate:hover{
+    background-color: #2a62fc;
+
+}
+.result{padding:30px 20px}
+.result p{
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+}
+.result #result{
+
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #fff;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+#comment{
+    color: #4f7df9;
+    font-weight: 800;
+}
+
+/* .chartMenu {
+    width: 100vw;
+    height: 40px;
+    background: #1A1A1A;
+    color: rgba(54, 162, 235, 1);
+  }
+  .chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .chartCard {
+    width: 100vw;
+    height: calc(100vh - 40px);
+    background: rgba(54, 162, 235, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chartBox {
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    background: white;
+  } */

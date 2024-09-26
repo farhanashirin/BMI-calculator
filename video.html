@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Video</title>
+    <style>
+        #bmi-info {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        body{
+            background-color: #f9f9f9; /* Light Gray */
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bmi-info"></div>   
+
+    <!-- Embed Exercise Video -->
+    <iframe style =" position: absolute; left:420px;top:200px"id="exercise-video" width="560" height="315" 
+            src="" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                bmi: params.get('BMI'),
+                status: params.get('status'),
+                videoUrl: params.get('videoUrl')
+            };
+        }
+
+        // Extract parameters from URL
+        const { bmi, status, videoUrl } = getQueryParams();
+
+        // Display BMI info
+        const bmiInfo = document.getElementById('bmi-info');
+        bmiInfo.innerHTML = 
+        `<div style="margin-left:550px  ; margin-top:80px; font-size:28px;"
+        >
+        you are classified as <strong> ${status}</strong></div>
+        <br>
+       <div style="margin-left:450px  ; margin-top:20px"> you can refer the video given below to maintain a healthy routine</div>
+`
+        
+
+        // Set the exercise video based on the passed video URL
+        const videoElement = document.getElementById('exercise-video');
+        videoElement.src = decodeURIComponent(videoUrl);
+    </script>
+
+</body>
+</html>
