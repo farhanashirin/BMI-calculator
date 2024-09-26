@@ -24,7 +24,7 @@ let videoUrl ='';
 
 if(BMI <18.5)
 {
-    status = "UnderWeight"
+    status = "Under Weight"
     angle=-120;
    videoUrl="https://www.youtube.com/embed/sGVf3w1ow6Q?si=J16FVrGlpXyvqiDH" 
 }
@@ -37,7 +37,7 @@ else if(BMI >= 18.5 && BMI <25)
 }
  else if(BMI >= 25 && BMI < 30)
 {
-    status = "OverWeight"
+    status = "Over Weight"
     angle=-30;
     videoUrl="https://www.youtube.com/embed/1UBuwKo3jvY?si=QhyyUQa21e3WAw_p"
 }

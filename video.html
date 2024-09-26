@@ -4,16 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise Video</title>
-    <style>
-        #bmi-info {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        body{
-            background-color: #f9f9f9; /* Light Gray */
-            color: #000000;
-        }
-    </style>
+    <link rel="stylesheet" href=".video.css">
+ 
 </head>
 
 <body>
@@ -21,7 +13,7 @@
     <div id="bmi-info"></div>   
 
     <!-- Embed Exercise Video -->
-    <iframe style =" position: absolute; left:420px;top:200px"id="exercise-video" width="560" height="315" 
+    <iframe style =" position: absolute; left:390px;top:200px"id="exercise-video" width="620" height="415" 
             src="" 
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
@@ -44,12 +36,15 @@
         // Display BMI info
         const bmiInfo = document.getElementById('bmi-info');
         bmiInfo.innerHTML = 
-        `<div style="margin-left:550px  ; margin-top:80px; font-size:28px;"
+        `
+        <div style="background-image:url(https://media.istockphoto.com/id/1186618675/video/3d-abstract-blue-blurred-geometry-wireframe-network-and-connecting-dot-in-space-on-white.jpg?s=640x640&k=20&c=-K5lrKPkSaC3mJ7fEIjxfwcS2SGDsibkdNrSG3W8Ry4=); background-size:cover;background-repeat:no-repeat;  height:750px">
+        <div style="margin-left:490px  ; padding-top:80px; font-size:28px;"
         >
         you are classified as <strong> ${status}</strong></div>
         <br>
-       <div style="margin-left:450px  ; margin-top:20px"> you can refer the video given below to maintain a healthy routine</div>
-`
+       <div style="margin-left:420px  ; margin-top:15px; font-size:20px"> you can refer the video given below to maintain a healthy routine</div>
+</div>
+       `
         
 
         // Set the exercise video based on the passed video URL
